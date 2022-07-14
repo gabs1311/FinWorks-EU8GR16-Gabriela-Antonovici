@@ -13,7 +13,11 @@ public class LogoutPage extends BasePage{
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginButton;
-    @FindBy(className = "oe_topbar_name")
+   // @FindBy(className = "oe_topbar_name")
+    @FindBy(xpath = "//a[@class = 'dropdown-toggle']")
+    // ***  does not work, I need to find another locator
+
+
     public WebElement profileDropdownMenu;
 
     @FindBy(xpath = "//a[@data-menu='logout']")
@@ -23,7 +27,6 @@ public class LogoutPage extends BasePage{
 
    // @FindBy(xpath = "a[@class = 'dropdown-toggle']")
 
- //   @FindBy(xpath = "//a[@class = 'dropdown-toggle']")
 
 
 
