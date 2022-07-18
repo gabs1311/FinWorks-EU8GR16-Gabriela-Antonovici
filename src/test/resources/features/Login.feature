@@ -6,7 +6,7 @@ Feature: Login feature
     Given  user is on the login page
 
   Scenario Outline: AC1 - Verify that I can login with valid credentials.
-
+    @smoke
     When user enters username "<userName>"
     And user enters password "<password>"
     And user clicks the login button
