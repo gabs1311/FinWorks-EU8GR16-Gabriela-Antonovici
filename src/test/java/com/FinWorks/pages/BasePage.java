@@ -13,7 +13,8 @@ PageFactory.initElements(Driver.getDriver(),this);
 
     }
 
-    @FindBy(id= "login")
+   // @FindBy(id= "login")
+    @FindBy(xpath = "//input[@name='login']")
     public WebElement inputUserName;
 
     @FindBy(id ="password")

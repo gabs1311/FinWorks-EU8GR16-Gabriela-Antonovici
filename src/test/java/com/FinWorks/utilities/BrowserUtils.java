@@ -486,7 +486,7 @@ for given duration
      */
     public static void waitForInvisibilityOf(WebElement webElement){
         //Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 30);
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
         wait.until(ExpectedConditions.invisibilityOf(webElement));
     }
 

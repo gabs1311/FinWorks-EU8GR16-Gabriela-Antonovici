@@ -1,14 +1,18 @@
 Feature: Logout feature
 
-USER STORY:
+  USER STORY:
   As a logged in user I should be able to logout.
 
-  @wip @smoke
-Scenario: AC: Verify that I can logout by clicking the  button in the profile dropdown menu.
-Given user is on the login page
-  When user is logged in using   username "salesmanager15@info.com " and password "< salesmanager >" and clicks the loggin button
-  And user clicks the dropdown profile menu
-  Then user clicks the logout button
+  @wip
+  Scenario: AC: Verify that I can logout by clicking the  button in the profile dropdown menu.
+    Given user enters username "salesmanager15@info.com"
+    Given user enters password "salesmanager"
+    When  user  clicks the loggin button
+    And user is logged in
+    And user clicks the dropdown profile menu
+    And user clicks the logout button
+    Then user returns to the login page
+
 
 
 
