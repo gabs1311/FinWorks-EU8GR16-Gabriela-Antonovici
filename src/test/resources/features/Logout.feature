@@ -3,7 +3,7 @@ Feature: Logout feature
   USER STORY:
   As a logged in user I should be able to logout.
 
-  @wip
+  @wip @regression
   Scenario: AC: Verify that I can logout by clicking the  button in the profile dropdown menu.
     Given user enters username "salesmanager15@info.com"
     Given user enters password "salesmanager"
