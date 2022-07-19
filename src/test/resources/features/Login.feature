@@ -4,7 +4,7 @@ Feature: Login feature
 
   Background: user is on the login page
     Given  user is on the login page
-  @smoke  @ regression
+  @smoke  @regression
   Scenario Outline: AC1 - Verify that I can login with valid credentials.
 
     When user enters username "<userName>"
@@ -22,7 +22,7 @@ Feature: Login feature
       | Expenses Manager       | expensesmanager10@info.com | expensesmanager  |
       | Manufacturing User     | Manufacturing User         | manufuser        |
 
-    @regression
+ @regression
   Scenario Outline:  AC2 - Verify that I can not login with invalid credentials. Negative scenario
 
     When user enters invalid  username "<userName>"
