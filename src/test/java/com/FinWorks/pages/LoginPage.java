@@ -19,12 +19,8 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginButton;
 
-   // @FindBy(linkText  ="/web#menu_id=115&action=120")
 
-   // @FindBy(id="oe_main_menu_navbar")
    @FindBy(xpath = "nav[@id='oe_main_menu_navbar']")
-
-
     public WebElement navigationBar;
 
 

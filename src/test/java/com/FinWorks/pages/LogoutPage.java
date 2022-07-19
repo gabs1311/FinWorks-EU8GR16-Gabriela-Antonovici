@@ -12,21 +12,8 @@ public class LogoutPage extends BasePage{
     }
 
     @FindBy(xpath = "//button[text()='Log in']")
-    //button[text()='Log in']"
+
     public WebElement loginButton;
-   // @FindBy(className = "oe_topbar_name")
-    //@FindBy(xpath = "//a[@class = 'dropdown-toggle']")
-    // ***  does not work, I need to find another locator
-
-   //     @FindBy(xpath = "//span[contains(text(),'SalesManager15')]")
-  //  public WebElement profileDropdownMenu;
-
-  //  @FindBy(xpath = "//a[@data-menu='logout']")
-   // public WebElement logoutButton;
-
-    //@FindBy(xpath = "//nav[@id='oe_main_menu_navbar']")
-
-   // @FindBy(xpath = "a[@class = 'dropdown-toggle']")
 
     @FindBy(className = "oe_topbar_name")
     public WebElement topbarDropdown;
