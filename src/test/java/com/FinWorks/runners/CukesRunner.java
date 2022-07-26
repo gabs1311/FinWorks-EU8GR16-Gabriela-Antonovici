@@ -23,7 +23,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue="com/FinWorks/step_definitions",
         dryRun= true,
-        tags = "",
+        tags = "@wip",
         publish = true
 
 
